@@ -1,9 +1,12 @@
 import React from 'react'
+import './Column.css'
+import Task from '../components/Task'
 
 const Column = ({ state }) => {
   return (
-    <div>
-      
+    <div className='column'>
+      <p>{state}</p>
+      <Task title="Todo" />
     </div>
   )
 }
